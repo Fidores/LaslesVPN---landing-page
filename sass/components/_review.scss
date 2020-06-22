@@ -1,0 +1,54 @@
+.review {
+    display: grid;
+    grid-template-areas:
+        'avatar author rate'
+        'avatar location rate'
+        'content content content'
+    ;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: rem(30px) rem(25px) auto;
+    column-gap: rem(10px);
+    border: rem(2px) solid #DDDDDD;
+    border-radius: rem(10px);
+    width: rem(400px);
+    padding: rem(20px);
+    justify-items: start;
+    background-color: $primaryBackgroundColor;
+
+
+    &__avatar {
+        grid-area: avatar;
+        width: 50px;
+        height: 50px;
+        place-self: center;
+    }
+
+    &__author {
+        grid-area: author;
+        align-self: center;
+        font-size: rem(18px);
+    }
+
+    &__location {
+        grid-area: location;
+        font-size: rem(14px);
+        color: $textPrimaryColorLight;
+    }
+
+    &__rate {
+        grid-area: rate;
+        align-self: center;
+
+        .fa-star {
+            color: #FEA250;
+            margin-left: rem(10px);
+        }
+    }
+
+    &__content {
+        grid-area: content;
+        text-align: left;
+        margin-top: rem(20px);
+        line-height: rem(30px);
+    }
+}

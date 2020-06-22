@@ -1,0 +1,41 @@
+.plan {
+    padding: rem(70px);
+    background-color: #FFF;
+    border: rem(3px) solid #DDDDDD;
+    border-radius: rem(10px);
+    display: grid;
+    grid-template-rows: 3fr 1fr 4fr 1fr;
+    transition: border-color .2s ease-in;
+
+    &:hover {
+        border-color: $primaryColor;
+        transition: border-color .2s ease-out;
+    }
+
+    &__image {
+        width: rem(150px);
+        margin: 0px auto;
+    }
+
+    &__list {
+        margin: 0px auto;
+        text-align: left;
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    &__item {
+        margin-bottom: rem(20px);
+
+        .fa-check {
+            color: $successColor;
+            margin-right: rem(10px);
+        }
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: rem(30px);
+        align-self: center;
+    }
+}

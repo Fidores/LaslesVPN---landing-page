@@ -1,0 +1,40 @@
+.welcome {
+    display: grid;
+    grid-template-areas:
+        'heading image'
+        'description image'
+        'button image'
+    ;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__heading {
+        grid-area: heading;
+        font-size: rem(50px);
+    }
+
+    &__description {
+        grid-area: description;
+    }
+
+    &__button {
+        grid-area: button;
+    }
+
+    &__image {
+        grid-area: image;
+        display: flex;
+        align-content: center;
+    }
+
+    @media screen and (max-width: 425px) {
+        grid-template-columns: 1fr;
+
+        &__image {
+            display: none;
+        }
+
+        &__heading {
+            font-size: rem(45px);
+        }
+    }
+}

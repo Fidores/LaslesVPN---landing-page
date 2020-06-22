@@ -1,0 +1,33 @@
+.testimonials {
+    background-color: $primaryBackgroundColorDarker;
+    text-align: center;
+
+    &__heading {
+        font-size: rem(35px);
+    }
+
+    &__description {
+        margin-bottom: rem(150px);
+    }
+
+    &__reviews {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__review {
+        margin: 0px rem(15px) rem(30px) rem(15px);
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    @media screen and (max-width: $maxContentWidth) {
+
+        &__description {
+            margin-bottom: rem(50px);
+        }
+    }
+}

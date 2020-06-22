@@ -1,0 +1,16 @@
+.plans {
+    background-color: $primaryBackgroundColorDarker;
+    text-align: center;
+
+    &__heading {
+        font-size: rem(35px);
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(rem(340px), 1fr));
+        gap: rem(30px);
+        margin-top: rem(100px);
+    }
+
+}

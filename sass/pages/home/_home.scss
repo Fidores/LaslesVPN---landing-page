@@ -1,0 +1,22 @@
+.section {
+    max-width: $maxContentWidth;
+    padding-top: rem(50px);
+    padding-bottom: rem(50px);
+    margin: 0px auto;
+
+    &__heading {
+        font-size: rem(35px);
+    }
+
+    &__description {
+        color: $textPrimaryColorLight;
+        font-size: rem(20px);
+        margin: rem(30px) 0px;
+
+    }
+
+    @media screen and (max-width: $maxContentWidth) {
+        padding-left: rem(15px);
+        padding-right: rem(15px);
+    }
+}

@@ -1,0 +1,54 @@
+.footer {
+    background-color: $primaryBackgroundColorDark;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__description {
+        color: $textPrimaryColorLight;
+        margin: rem(25px) 0px;
+    }
+
+    &__heading {
+        margin-bottom: rem(30px);
+    }
+
+    &__list {
+        list-style: none;
+        color: $textPrimaryColorLight;
+
+        li:not(:last-child) {
+            margin-bottom: rem(20px);
+        }
+    }
+
+    &__copyright {
+        color: $textPrimaryColorLighter;
+        margin-top: rem(25px);
+    }
+
+    @media screen and (max-width: 1024px) {
+        &__section {
+            margin-right: rem(70px);
+        }
+    }
+
+    @media screen and (max-width: 490px) {
+        &__container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        &__section {
+            text-align: center;
+            margin-right: 0px;
+
+            &:nth-child(1) {
+                grid-column: 1/4;
+            }
+        }
+    }
+}

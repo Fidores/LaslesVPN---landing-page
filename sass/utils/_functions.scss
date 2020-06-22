@@ -1,0 +1,13 @@
+@function rem($value, $globalFontSize: 16px) {
+    $fontSize: $value;
+
+    @if(unitless($fontSize)) {
+        $fontSize: $fontSize * 1px;
+    }
+
+    @if(unitless($globalFontSize)) {
+        $globalFontSize: $globalFontSize * 1px;
+    }
+
+    @return ($fontSize / $globalFontSize) * 1em;
+}

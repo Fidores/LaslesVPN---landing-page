@@ -1,0 +1,21 @@
+body {
+    color: $textPrimaryColor;
+    font-family: 'Rubik', sans-serif;
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: currentColor;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0px;
+}
+
+p {
+    margin: 0px;
+}

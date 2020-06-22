@@ -1,0 +1,27 @@
+.nav {
+    font-size: $textPrimaryColorLight;
+
+    &__links {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: rem(40px);
+    }
+
+    @media screen and (max-width: 768px) {
+        &__links {
+            flex-direction: column;
+        }
+
+        &__item {
+            &:not(:first-child) {
+                margin-top: rem(20px);
+            }
+        }
+    }
+
+}

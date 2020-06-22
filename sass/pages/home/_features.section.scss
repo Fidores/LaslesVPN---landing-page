@@ -1,0 +1,43 @@
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    column-gap: rem(30px);
+
+    &__heading {
+        font-size: rem(35px);
+    }
+
+    &__list {
+        list-style-type: none;
+        padding: 0px;
+    }
+
+    &__feature {
+
+        &:not(:last-child) {
+            margin-bottom: rem(20px);
+        }
+
+        .fa-check-circle {
+            color: $successColor;
+            margin-right: rem(10px);
+        }
+    }
+
+    @media screen and (max-width: 425px) {
+        grid-template-columns: 1fr;
+
+        &__heading {
+            margin-top: rem(30px)
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &__list {
+            margin-bottom: rem(30px);
+        }
+    }
+}

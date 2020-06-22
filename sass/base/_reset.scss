@@ -1,0 +1,29 @@
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+
+    @media screen and (max-width: 966px) {
+        font-size: 80%;
+    }
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
