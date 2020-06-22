@@ -11,4 +11,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"QCba":[function(require,module,exports) {
 "use strict";var e=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(exports,"__esModule",{value:!0});var t=e(require("./js/homeAnimations")),r=e(require("./js/responsiveMenu"));t.default(),r.default();
 },{"./js/homeAnimations":"TFgP","./js/responsiveMenu":"aZHg"}]},{},["QCba"], null)
-//# sourceMappingURL=/LaslesVPN%20-%20landing%20page.a97a2d13.js.map
+//# sourceMappingURL=LaslesVPN%20-%20landing%20page.a97a2d13.js.map
